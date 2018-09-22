@@ -1,9 +1,10 @@
-Files are copyrighted 2002, R. Bryant and D. O'Hallaron
+Files are copyrighted 2002, R. Bryant and D. O'Halla
 
-I implemented malloc() and free() routines within the mm.c file
+I implemented malloc() and free() routines within the mm.c file, the rest of the files are used for driving the implementation
 
 
-
-To test the program:
+To test my implementation:
    linux>make mdriver
-   linux>./mdriver <optional tracefile>
+   linux>./mdriver <optional tracefile from ./traces>
+   
+The results are a score based on throughput and utilization of memory
