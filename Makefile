@@ -14,11 +14,6 @@ mdriver: mdriver.o $(OBJS)
 
 mdriver.o: mdriver.c fsecs.h fcyc.h clock.h memlib.h config.h mm.h
 
-mdriver-realloc: mdriver-realloc.o  $(OBJS)
-	$(CC) $(CFLAGS) -o mdriver-realloc mdriver-realloc.o $(OBJS)
-
-mdriver-realloc.o: mdriver-realloc.c fsecs.h fcyc.h clock.h memlib.h config.h mm.h
-
 memlib.o: memlib.c memlib.h
 mm.o: mm.c mm.h memlib.h
 fsecs.o: fsecs.c fsecs.h config.h
@@ -27,6 +22,6 @@ ftimer.o: ftimer.c ftimer.h config.h
 clock.o: clock.c clock.h
 
 clean:
-	rm -f *~ *.o mdriver mdriver-realloc
+	rm -f *~ *.o mdriver
 
 
